@@ -1,0 +1,65 @@
+
+<html>
+<head>
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container mt-4 ">
+        <h1 class="text-center fw-bolder">Bookmarker</h1>
+        <hr>
+        <h2 class="text-center mt-3"><i class="fa-solid fa-bookmark"></i>Bookmark your favorite sites <i class="fa-solid fa-bookmark"></i></h2>
+
+        <label for="bookName" class="fs-5 mt-5"><i class="fa-solid fa-book"></i>Site Name</label>
+
+        <input type="text" id="bookName" class="form-control mt-3" placeholder="BookMark Name">
+
+        <label for="bookUrl" class="fs-5 mt-5"><i class="fa-solid fa-link"></i>Site URL</label>
+        <input type="url" id="bookUrl" class="form-control mt-3" placeholder="webSite URL">
+
+
+<div class="thebtn d-flex align-items-center justify-content-center mt-5 flex-column gap-3">
+    <button class="btn btn-success text-center px-5" id="sumbitBtn" onclick="addBook()">Sumbit</button>
+    <button class="btn btn-success text-center px-5 d-none" id="updateBtn" onclick="UpdateBook()">update</button>
+</div>
+     
+<hr class="mt-5">
+<input type="text"  id="serch" class="form-control mt-5" placeholder="search . . . . " onkeyup="search(this.value)">
+    </div>
+
+    <div class="container m-5">
+        <table class="table table-hover ms-5">
+            <thead>
+                <th>Inedx</th>
+                <th>website name </th>
+                <th>visit</th>
+                <th>delete</th>
+                <th>update</th>
+            </thead>
+            <tbody id="tableData">
+<tr>
+
+
+</tr>
+            </tbody>
+        </table>
+    </div>
+
+
+   
+    
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

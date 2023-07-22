@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 5000px;
+    background-color: #F7ECDE;
+}
+
+h1{
+    color:#352E28;
+    font-size:50px;
+    font-family: 'Pacifico', cursive;
+    font-style: italic;
+    position: relative;
+}
+
+h1::after{
+    position: absolute;
+    content: "";
+    width:310px;
+    height: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FEC260;
+    bottom: -10px;
+    transition: 0.5s ease-in;
+    z-index: -1;
+}
+
+h1:hover::after{
+height: 50px;
+}
+
+hr{
+    border-top: dotted 3px;
+    margin-top: 80px;
+}
+
+h2{
+    color:#47A55A ;
+
+}
+
+h2 i{
+    padding: 10px;
+}
+
+label i{
+    padding-right: 10px;
+}
+
+span{
+    background-color: yellow;
+}
